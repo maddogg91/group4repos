@@ -1,0 +1,21 @@
+
+    public class Ticket
+    {
+        public string T_id { get; set; }
+        public string Status { get; set; }
+        public string E_id { get; set; }
+        public string Priority { get; set; }
+        public string Task { get; set; }
+        public string C_id { get; set; }
+        public string Date_created { get; set; }
+        public Ticket(string id, string status, string employee, string priority, string task, string customer, string date)
+        {
+            T_id = id;
+            Status = status;
+            E_id = employee;
+            Priority = priority;
+            Task = task;
+            C_id = customer;
+            Date_created = date;
+        }
+    }
