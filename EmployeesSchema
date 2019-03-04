@@ -1,0 +1,29 @@
+public class Employees
+    {
+        public string E_id { get; set; }
+        public string FName { get; set; }
+        public string LName { get; set; }
+        public string Tier { get; set; }
+        public Employees(string id, string fn, string ln, string tier)
+        {
+            E_id = id;
+            FName = fn;
+            LName = ln;
+            Tier = tier;
+
+
+        }
+    }
+
+
+        public static void NewUser()
+        {
+            Random rand = new Random();
+            int num = rand.Next(0, 999);
+            //num to string will format the output according to the data dictionary
+            string pk = num.ToString("D3");
+            Employees newUser = new Employees("EMP"+pk, "John", "Smith", "Tier 3");
+          
+            Console.WriteLine("{0} {1} {2} {3}", newUser.E_id, newUser.FName, newUser.LName, newUser.Tier);
+            Console.ReadLine();
+        }
