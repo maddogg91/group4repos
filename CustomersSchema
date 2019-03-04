@@ -1,0 +1,11 @@
+public Customers(string id, string fn, string ln, string phone, string email, string address)
+        {
+            C_id = id;
+            FName = fn;
+            LName = ln;
+            Phone = phone;
+            Email = email;
+            Address = address;
+
+
+        }
