@@ -1,0 +1,10 @@
+Essentially where the user will be able to select the modified status.
+
+
+public static string TestModifyStatus()
+        {
+            Console.WriteLine("Enter Open, Closed, or Resolved");
+            string input = Console.ReadLine();
+            input = input.ToLower();
+            return input;
+        }
