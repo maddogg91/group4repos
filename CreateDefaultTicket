@@ -1,0 +1,11 @@
+ //method to create a ticket
+        public static void CreateDefaultTicket()
+        {
+            string key = GeneratePrimaryKey();
+            string status = SelectStatus();
+            //Create default ticket
+            Ticket default_ticket = new Ticket(key, status, "", "", "", "", "");
+            Console.WriteLine("{0} {1}", default_ticket.T_id, default_ticket.Status);
+            Console.ReadLine();
+            
+        }
