@@ -1,0 +1,8 @@
+ //Generates the Primary Key for the ticket
+        public static string GeneratePrimaryKey()
+        {
+            Random rand = new Random();
+            int num = rand.Next(0, 99999);
+            string pk = num.ToString();
+            return pk;
+        }
