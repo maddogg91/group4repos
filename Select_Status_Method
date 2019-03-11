@@ -1,0 +1,30 @@
+
+        //Selects the current status based on user input
+        public static string SelectStatus()
+        {
+        //For now the status input lacks the method to call the value for status but the method currently demonstrates if Open or default 
+        is selected.
+        
+        
+            string status = "Open";
+            switch (status)
+            {
+                case "closed":
+                    {
+                        string closed = "closed";
+                        return closed;
+
+                    }
+                case "resolved":
+                    {
+                        string resolved = "resolved";
+                        return resolved;
+                    }
+                default:
+                    {
+                        string open = "open";
+                        return open;
+
+                    }
+            }
+        }
