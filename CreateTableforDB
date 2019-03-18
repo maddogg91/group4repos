@@ -1,6 +1,6 @@
 //This is a sample sql lite code to create a table in the created database. This follows loosely on the ticket schema.
 //Bugs: date_created is having trouble importing sysdate as the default, will continue to work out these kinks (RC)
-
+//Temp Fix: date_created date default current_timestamp for datatype
 Code as follows:
 
 //Using this sql statement a skeleton for ticket is created with data types.
