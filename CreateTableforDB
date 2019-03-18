@@ -1,0 +1,38 @@
+//This is a sample sql lite code to create a table in the created database. This follows loosely on the ticket schema.
+//Bugs: date_created is having trouble importing sysdate as the default, will continue to work out these kinks (RC)
+
+Code as follows:
+
+//Using this sql statement a skeleton for ticket is created with data types.
+  void CreateTable()
+        {
+            string sql = "Create table ticket (tick_id char (5) primary key, status varchar2 (8) default ‘Open’, emp_id char (7), " +
+            "priority vchar2 (14) default ‘unassigned’, task varchar2 (10), cust_id char (7), date_created date)";
+            SQLiteCommand command =new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+        }
+        
+  //This sample imports values into the char datatypes but all of the columns can be added if needed.      
+   void  FillTable()
+        {
+         
+               
+            
+            string sql = $"insert into ticket (tick_id, emp_id, cust_id) values(55555, 5555555, 555555)";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+        }
+ 
+ //Using the select statment, the information inputted into the ticket is displayed.      
+  void PrintTicketInfo()
+        {
+            string sql = "select * from ticket";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+                Console.WriteLine(reader["tick_id"]+ "\t" + reader["emp_id"] + "\t" + reader["cust_id"] + reader["date_created"]) ;
+            Console.ReadLine();
+
+        }
+        
+        
