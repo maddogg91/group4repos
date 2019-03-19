@@ -1,0 +1,6 @@
+//Creates the table for employees
+
+string sql = "Create table employees (emp_id char (7) primary key, fname varchar2 (14), lname varchar2 (14), tier char (1))"; 
+
+SQLiteCommand command =new SQLiteCommand(sql, m_dbConnection);
+command.ExecuteNonQuery();
