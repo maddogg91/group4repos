@@ -1,0 +1,10 @@
+//SQL LITE CODE FOR CREATE TICKET TABLE
+
+//Create ticket table in Skeleton DB
+
+string sql = "Create table ticket (tick_id char (5) primary key, status varchar2 (8) default ‘Open’, emp_id char (7), " +
+"priority vchar2 (14) default ‘unassigned’, task varchar2 (10), cust_id char (7), date_created date)";
+SQLiteCommand command =new SQLiteCommand(sql, m_dbConnection);
+command.ExecuteNonQuery();
+
+
