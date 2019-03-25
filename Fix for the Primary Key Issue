@@ -1,0 +1,8 @@
+ bool result = true;
+
+            while (result == true)
+            {
+                num = rand.Next(0, 99999);
+                string check = num.ToString();
+                result = ImportedInfo.Contains(check);
+            }
