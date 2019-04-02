@@ -1,0 +1,4 @@
+
+>>> Proper new customer added
+>>> Working on having customer name displayed during create new ticket. (Search fname from customers where userid= 'current id')
+>>> Modify DB schema for date so it accepts a varchar2 instead of date.
