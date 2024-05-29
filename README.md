@@ -1,7 +1,5 @@
 # group4repos
-Robert added property schemas for Ticket tables and Employee tables
-Research conducted for implementing ASP core
-Bug testing for creating default tickets.
-The Primary key for ticket method was added. The value is created through Random number between 0-99999.
-Select status method added. Current issue### Needs method to call status based on user selection.
-Update and rename Create_Ticket to CreateDefaultTicket
+Associate Level Capstone Project
+
+CDMR ticketing system is a Desktop Application using .NET and SQL LITE as an out of the box IT Software system for IT companies to create, manage, and update tickets including their role and status over time.
+The original team consisted of four Associate prospects but completely turned into a one-man effort.
